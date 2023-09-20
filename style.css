@@ -1,0 +1,32 @@
+
+body{
+    background: rgb(34,193,195);
+background: linear-gradient(239deg, rgba(34,193,195,1) 0%, rgba(55,92,145,1) 100%);;
+}
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+}
+
+h2{
+    font-family: tahoma;
+    text-align: justify;
+}
+
+form{
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: bold ;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 20px;
+}
+
+.botones {
+    position: relative;
+    left: 650px;
+    bottom: 20px;
+}

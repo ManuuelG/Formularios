@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>¡AL LADRÓN! <img width="100" height="100" src="https://img.icons8.com/dotty/80/electric-bike.png" alt="electric-bike"/></h1>
+        <H2>El club de la tercera edad de Entrepenes, Asturias, te envía la noble tarea de crear un formulario de admisión para su club. Por otro lado, la policía de esa localidad quiere que le fabriques un formulario para el robo temporal de bicicletas. <br> Se sospecha que el club está viviendo una 5ª juventud y está detrás de estas travesuras.</H2>
+
+    </header>
+
+    <form action="formulario" id="formulario">
+
+
+        <fieldset>
+            <legend>Informacion personal</legend>
+
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus tabindex="1"><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="Apellidos" placeholder="Escribe tus apellidos" tabindex="2"><br><br>
+
+            <label for="Edad">Edad:</label>
+            <input type="number" id="Edad" name="Edad" placeholder="Tu edad" tabindex="3"><br><br>
+
+            <label for="Sexo">Indicanos tu sexo:</label>
+                
+                <label for="male"><input type="radio" id="hombre" name="hombre" value="hombre" tabindex="4">Hombre</label>
+                
+                <label for="female"><input type="radio" id="mujer" name="hombre" value="mujer" tabindex="5">Mujer</label>
+                
+                <label for="other"><input type="radio" id="otro" name="otro" value="autumn" tabindex="6">Otro</label> <br><br>
+
+        
+
+                <label for="fname">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce email..." tabindex="7" required> <br><br>
+
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" tabindex="8" required> <br><br>
+                
+            <label for="conditions">Me siento viejuner</label>   
+            <input type="checkbox" id="conditions" name="condiciones" tabindex="9" required> <br><br>
+
+            <label for="comments">Escribe algo sobre ti</label>
+            <textarea rows="2" cols="30" name="comments" wrap="hard" placeholder="Algo sobre ti..." tabindex="10">
+            </textarea>
+               
+        </fieldset>
+
+        <fieldset>
+        <legend> Los ladronzuelos de bicicletas</legend>
+
+
+        <label for="day">Dia</label>
+        <input type="date" id="dia" name="dia"> <br><br>
+
+        <label for="hora">Selecciona una hora:</label>
+        <input type="time" id="hora" name="hora"> <br><br>
+
+        <label for="color">Color de la bicicleta:</label>
+        <input type="color" id="color" name="color"> <br><br>
+
+      
+
+        <label for="bicicleta">Rango de precio:</label>
+        <input type="range" id="bicicleta" name="bicicleta" min="0" max="100" step="1"> <br><br>
+        
+        <label for="bicicleta">Tipo de bicicleta:</label>
+        <select name="bicicleta" id="bicicleta">
+          <optgroup label="Paseo">
+            <option value="señorial">Señorial</option>
+            <option value="antiplebs">Anti-plebeyos</option>
+            <option value="pedh">PorEncimaDelHombro</option>
+          </optgroup>
+          <optgroup label="Montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="HFP">HueleFlores-premium</option>
+            <option value="fangolover">Fango-lover</option>
+          </optgroup>
+          <optgroup label="Carreras">
+            <option value="metroymedio">Metroymedio</option>
+            <option value="mulargo">3 de la tarde. Edicion fosforito</option>
+            <option value="grupitors">Grupitors</option>
+        </optgroup>
+        </select>
+        <br><br>
+
+        <label for="accesorios">Accesorios:</label>
+        <select id="accesorios" name="accesorios" multiple>
+        <option value="ruedines">Ruedines</option>
+        <option value="pegatinas">Pegatinas</option>
+        <option value="cestita">Cestita</option>
+        <option value="bomba-aire">Bomba de aire</option>
+        <option value="timbre">Timbre</option>
+        <option value="foco">Foco</option>
+        </select> <br><br>
+
+        <label for="marca">¿Qué marca era?:</label>
+        <select name="marca" id="marca" autofocus>
+        <option value="specialized">Specialized</option>
+        <option value="trek">Trek</option>
+        <option value="merida">Merida</option>
+        <option value="scott">Scott</option>
+        <option value="giant">Giant</option>
+        <option value="cube">Cube</option>
+        <option value="lapierre">Lapierre</option>
+        <option value="orbea">Orbea</option>
+        <option value="cannondale">Cannondale</option>
+        <option value="bmc">BMC</option>
+        <option value="canyon">Canyon</option>
+        <option value="look">Look</option>
+        <option value="protek">Protek</option>
+        <option value="megamo">Megamo</option>
+        <option value="pinarello">Pinarello</option>
+        <option value="bianchi">Bianchi</option>
+        <option value="bh">BH</option>
+        <option value="factor">Factor</option>
+        <option value="ghost">Ghost</option>
+        <option value="cervelo">Cervelo</option>
+        <option value="argon">Argon</option>
+        </select>
+        <br><br>
+        </fieldset> <br>
+        
+            <input type="reset" value="Restablecer" class="botones">
+            <input type="submit" value="Enviar" class="botones">
+       
+    </form>
+    
+</body>
+</html>
